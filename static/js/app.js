@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const bookCards = Array.from(document.querySelectorAll('.book-card'));
+  const searchableSection = document.querySelector('#বই-সংগ্রহ [data-searchable-grid]');
+  const bookCards = searchableSection ? Array.from(searchableSection.querySelectorAll('.book-card')) : [];
   const searchInput = document.querySelector('#book-search');
   const categoryButtons = Array.from(document.querySelectorAll('.category-filter'));
-  const gridContainer = document.querySelector('#বই-সংগ্রহ .grid');
 
   const emptyState = document.createElement('div');
   emptyState.className =
     'col-span-full rounded-3xl border border-dashed border-slate-200 bg-white/80 p-10 text-center text-slate-500';
   emptyState.innerHTML =
-    '<p class="text-lg font-semibold text-slate-600">দুঃখিত! আপনার অনুসন্ধানের সাথে মেলে এমন বই খুঁজে পাওয়া যায়নি।</p><p class="mt-3 text-sm text-slate-500">ভিন্ন কীওয়ার্ড ব্যবহার করে দেখুন অথবা ক্যাটাগরি পরিবর্তন করুন।</p>';
+    '<p class="text-lg font-semibold text-slate-600">দুঃখিত! আপনার অনুসন্ধানের সাথে মেলে এমন বই পাওয়া যায়নি।</p><p class="mt-3 text-sm text-slate-500">ভিন্ন কীওয়ার্ড লিখে দেখুন অথবা অন্য ক্যাটাগরি বেছে নিন।</p>';
 
   const normalize = (value = '') =>
     value
@@ -54,16 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    if (!gridContainer) {
+    if (!searchableSection) {
       return;
     }
 
     if (usableCards.length === 0) {
-      if (!gridContainer.contains(emptyState)) {
-        gridContainer.appendChild(emptyState);
+      if (!searchableSection.contains(emptyState)) {
+        searchableSection.appendChild(emptyState);
       }
-    } else if (gridContainer.contains(emptyState)) {
-      gridContainer.removeChild(emptyState);
+    } else if (searchableSection.contains(emptyState)) {
+      searchableSection.removeChild(emptyState);
     }
   }
 
@@ -79,10 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let debounceTimer;
     searchInput.addEventListener('input', () => {
       window.clearTimeout(debounceTimer);
-      debounceTimer = window.setTimeout(applyFilters, 150);
+      debounceTimer = window.setTimeout(applyFilters, 160);
     });
   }
 
-  updateCategoryStyles(categoryButtons.find((btn) => (btn.dataset.category || '') === activeCategory));
+  updateCategoryStyles(categoryButtons.find((button) => (button.dataset.category || '') === activeCategory));
   applyFilters();
 });
