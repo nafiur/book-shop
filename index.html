@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>আধুনিক বাংলা অনলাইন বুকশপ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              bengali: [
+                '"Noto Sans Bengali"',
+                '"SolaimanLipi"',
+                'ui-sans-serif',
+                'system-ui',
+                'sans-serif'
+              ]
+            },
+            colors: {
+              brand: {
+                primary: '#7c3aed',
+                secondary: '#f97316',
+                muted: '#f5f3ff'
+              }
+            },
+            boxShadow: {
+              soft: '0 10px 30px rgba(15, 23, 42, 0.1)'
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="font-bengali bg-slate-50 text-slate-900 antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header
+        id="hero"
+        class="relative overflow-hidden bg-gradient-to-br from-brand-muted via-white to-indigo-50"
+      >
+        <div
+          class="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_top_right,_rgba(124,58,237,0.35),_transparent_60%)] pointer-events-none"
+        ></div>
+        <div
+          class="mx-auto flex max-w-7xl flex-col gap-16 px-6 pb-16 pt-20 lg:flex-row lg:items-center lg:px-8 lg:pt-24"
+        >
+          <div class="max-w-2xl space-y-6 lg:flex-1">
+            <span
+              class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-sm font-medium text-brand-primary shadow-soft shadow-brand-muted/50"
+            >
+              নতুন সংকলন • শীতে বিশেষ ছাড়
+            </span>
+            <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+              হাতে কলমে জ্ঞান, মন ছুঁয়ে যাওয়া গল্প—বাংলায় সেরা বইয়ের সংগ্রহ
+            </h1>
+            <p class="text-lg text-slate-600">
+              জনপ্রিয় বাংলা লেখক, দক্ষতা উন্নয়ন, ইসলামী অনুপ্রেরণা এবং ব্যবসায়িক
+              বই এক জায়গায়। আমাদের ডিজিটাল বুকশপ আপনার পড়ার সহচর।
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#বই-সংগ্রহ"
+                class="inline-flex items-center justify-center rounded-full bg-brand-primary px-7 py-3 text-base font-semibold text-white shadow-lg shadow-brand-primary/30 transition hover:scale-105 hover:bg-violet-600"
+              >
+                এখনই বই দেখুন
+              </a>
+              <a
+                href="#লেখক-স্পটলাইট"
+                class="inline-flex items-center justify-center rounded-full border border-slate-200 px-7 py-3 text-base font-semibold text-slate-800 transition hover:border-brand-primary hover:text-brand-primary"
+              >
+                প্রিয় লেখক দেখুন
+              </a>
+            </div>
+            <div class="flex flex-col gap-6 rounded-2xl bg-white/70 p-6 shadow-soft backdrop-blur-sm sm:flex-row sm:items-center sm:gap-12">
+              <div>
+                <p class="text-sm font-semibold text-slate-500">ফিচারড বই</p>
+                <ul class="mt-2 list-disc space-y-2 pl-4 text-sm text-slate-600">
+                  <li>আত্মোন্নয়নের জন্য “নেতৃত্বের পথে”</li>
+                  <li>ইসলামী আদর্শ নিয়ে “নূরানী জীবন”</li>
+                </ul>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-slate-500">জনপ্রিয় সংগ্রহ</p>
+                <ul class="mt-2 list-disc space-y-2 pl-4 text-sm text-slate-600">
+                  <li>ব্যবসায়িক কৌশল সিরিজ</li>
+                  <li>বাংলা সাহিত্যের ক্লাসিক</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex-1">
+            <div
+              class="relative mx-auto flex max-w-md flex-col gap-4 rounded-3xl border border-slate-100 bg-white/90 p-6 text-center shadow-soft backdrop-blur"
+            >
+              <div class="flex items-center justify-center gap-1 text-sm font-medium text-slate-500">
+                ⭐ <span>পাঠকের রেটিং ৪.৮/৫</span>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80"
+                alt="বইয়ের সংগ্রহ"
+                class="h-56 w-full rounded-2xl object-cover shadow-inner"
+              />
+              <p class="text-sm text-slate-600">
+                “প্রতিটি কেনাকাটায় দ্রুত ডেলিভারি, যত্ন সহকারে প্যাকেট।”
+              </p>
+              <span class="text-xs font-semibold uppercase tracking-wide text-brand-primary">
+                – নিয়মিত পাঠক কল্যাণী দাশ
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <section
+          id="অনুসন্ধান"
+          class="bg-white py-16"
+        >
+          <div class="mx-auto max-w-6xl px-6 lg:px-8">
+            <div class="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+              <div class="max-w-2xl space-y-3">
+                <h2 class="text-3xl font-semibold text-slate-900">আপনার পছন্দের বই খুঁজুন</h2>
+                <p class="text-base text-slate-600">
+                  লেখক, টাইটেল বা ক্যাটাগরি দিয়ে খুঁজুন। আধুনিক, পেশাগত ও আধ্যাত্মিক সব ধরণের বই এক ক্লিকেই।
+                </p>
+              </div>
+              <div class="flex w-full max-w-xl items-center rounded-full border border-slate-200 bg-slate-50 px-4 py-2 shadow-inner">
+                <span class="text-slate-400">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="h-5 w-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-4.35-4.35m0 0A7.5 7.5 0 1 0 6.75 6.75a7.5 7.5 0 0 0 9.9 9.9Z"
+                    />
+                  </svg>
+                </span>
+                <input
+                  id="book-search"
+                  type="search"
+                  placeholder="কী বই খুঁজছেন?"
+                  class="w-full bg-transparent px-4 py-2 text-base text-slate-700 placeholder:text-slate-400 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mt-10 flex flex-wrap gap-3">
+              <button
+                class="category-filter active rounded-full bg-brand-primary px-5 py-2 text-sm font-medium text-white transition hover:bg-violet-600 focus:outline-none"
+                data-category="all"
+              >
+                সব বই
+              </button>
+              <button
+                class="category-filter rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-primary hover:text-brand-primary focus:outline-none"
+                data-category="ব্যবসা"
+              >
+                ব্যবসা
+              </button>
+              <button
+                class="category-filter rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-primary hover:text-brand-primary focus:outline-none"
+                data-category="মোটিভেশন"
+              >
+                মোটিভেশন
+              </button>
+              <button
+                class="category-filter rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-primary hover:text-brand-primary focus:outline-none"
+                data-category="ইসলামী"
+              >
+                ইসলামী
+              </button>
+              <button
+                class="category-filter rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-primary hover:text-brand-primary focus:outline-none"
+                data-category="দক্ষতা"
+              >
+                দক্ষতা
+              </button>
+              <button
+                class="category-filter rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-600 transition hover:border-brand-primary hover:text-brand-primary focus:outline-none"
+                data-category="ফিকশন"
+              >
+                ফিকশন
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="বই-সংগ্রহ"
+          class="relative overflow-hidden bg-gradient-to-b from-white to-slate-100 py-16"
+        >
+          <div class="absolute inset-0">
+            <div class="absolute left-10 top-10 h-32 w-32 rounded-full bg-brand-primary/10 blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 h-36 w-36 rounded-full bg-brand-secondary/10 blur-3xl"></div>
+          </div>
+          <div class="relative mx-auto max-w-6xl px-6 lg:px-8">
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <h2 class="text-3xl font-semibold text-slate-900">নির্বাচিত বইয়ের সংগ্রহ</h2>
+                <p class="mt-2 text-base text-slate-600">
+                  সবচেয়ে বেশি পঠিত, নতুন প্রকাশনা ও প্রয়োজনীয় দক্ষতা উন্নয়ন বইগুলি এখন হাতের নাগালে।
+                </p>
+              </div>
+              <a
+                href="#"
+                class="hidden text-sm font-semibold text-brand-primary hover:text-violet-600 lg:block"
+              >
+                আরও বই দেখুন →
+              </a>
+            </div>
+
+            <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <article
+                class="book-card group flex h-full flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-2xl"
+                data-title="নেতৃত্বের পথে"
+                data-author="রাফি আহমেদ"
+                data-category="ব্যবসা,মোটিভেশন"
+              >
+                <div class="aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80"
+                    alt="নেতৃত্বের পথে বইয়ের কভার"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                  <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-brand-primary">
+                    <span>ব্যবসা</span>
+                    <span>•</span>
+                    <span>মোটিভেশন</span>
+                  </div>
+                  <h3 class="mt-3 text-xl font-semibold text-slate-900">নেতৃত্বের পথে</h3>
+                  <p class="mt-1 text-sm text-slate-500">রাফি আহমেদ</p>
+                  <p class="mt-4 text-lg font-semibold text-slate-900">৳ ৪২০</p>
+                  <button
+                    class="mt-auto inline-flex items-center justify-center rounded-full bg-brand-secondary px-5 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
+                  >
+                    এখনই কিনুন
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="book-card group flex h-full flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-2xl"
+                data-title="মন জাগানোর গল্প"
+                data-author="শাহানা হক"
+                data-category="মোটিভেশন,ফিকশন"
+              >
+                <div class="aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1528208079121-0feab6cc5f7e?auto=format&fit=crop&w=600&q=80"
+                    alt="মন জাগানোর গল্প বইয়ের কভার"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                  <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-rose-500">
+                    <span>মোটিভেশন</span>
+                    <span>•</span>
+                    <span>ফিকশন</span>
+                  </div>
+                  <h3 class="mt-3 text-xl font-semibold text-slate-900">মন জাগানোর গল্প</h3>
+                  <p class="mt-1 text-sm text-slate-500">শাহানা হক</p>
+                  <p class="mt-4 text-lg font-semibold text-slate-900">৳ ৩৩০</p>
+                  <button
+                    class="mt-auto inline-flex items-center justify-center rounded-full bg-brand-secondary px-5 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
+                  >
+                    এখনই কিনুন
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="book-card group flex h-full flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-2xl"
+                data-title="নূরানী জীবন"
+                data-author="ড. মাহবুব রহমান"
+                data-category="ইসলামী"
+              >
+                <div class="aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=600&q=80"
+                    alt="নূরানী জীবন বইয়ের কভার"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                  <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-emerald-500">
+                    <span>ইসলামী</span>
+                  </div>
+                  <h3 class="mt-3 text-xl font-semibold text-slate-900">নূরানী জীবন</h3>
+                  <p class="mt-1 text-sm text-slate-500">ড. মাহবুব রহমান</p>
+                  <p class="mt-4 text-lg font-semibold text-slate-900">৳ ২৯০</p>
+                  <button
+                    class="mt-auto inline-flex items-center justify-center rounded-full bg-brand-secondary px-5 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
+                  >
+                    এখনই কিনুন
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="book-card group flex h-full flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-2xl"
+                data-title="ফাইন্যান্সের প্রথম পাঠ"
+                data-author="আরাফাত চৌধুরী"
+                data-category="ব্যবসা"
+              >
+                <div class="aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=600&q=80"
+                    alt="ফাইন্যান্সের প্রথম পাঠ বইয়ের কভার"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                  <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-sky-500">
+                    <span>ব্যবসা</span>
+                  </div>
+                  <h3 class="mt-3 text-xl font-semibold text-slate-900">ফাইন্যান্সের প্রথম পাঠ</h3>
+                  <p class="mt-1 text-sm text-slate-500">আরাফাত চৌধুরী</p>
+                  <p class="mt-4 text-lg font-semibold text-slate-900">৳ ৫৫০</p>
+                  <button
+                    class="mt-auto inline-flex items-center justify-center rounded-full bg-brand-secondary px-5 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
+                  >
+                    এখনই কিনুন
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="book-card group flex h-full flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-2xl"
+                data-title="প্রেজেন্টেশনের জাদু"
+                data-author="নাভিদ হাসান"
+                data-category="দক্ষতা"
+              >
+                <div class="aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80"
+                    alt="প্রেজেন্টেশনের জাদু বইয়ের কভার"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                  <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-blue-500">
+                    <span>দক্ষতা</span>
+                  </div>
+                  <h3 class="mt-3 text-xl font-semibold text-slate-900">প্রেজেন্টেশনের জাদু</h3>
+                  <p class="mt-1 text-sm text-slate-500">নাভিদ হাসান</p>
+                  <p class="mt-4 text-lg font-semibold text-slate-900">৳ ৩৮০</p>
+                  <button
+                    class="mt-auto inline-flex items-center justify-center rounded-full bg-brand-secondary px-5 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
+                  >
+                    এখনই কিনুন
+                  </button>
+                </div>
+              </article>
+
+              <article
+                class="book-card group flex h-full flex-col rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-2xl"
+                data-title="মুগ্ধতার কাব্য"
+                data-author="আলিফা রহমান"
+                data-category="ফিকশন"
+              >
+                <div class="aspect-[3/4] overflow-hidden rounded-2xl bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1455885666463-1a1f43184f1d?auto=format&fit=crop&w=600&q=80"
+                    alt="মুগ্ধতার কাব্য বইয়ের কভার"
+                    class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div class="mt-6 flex flex-1 flex-col">
+                  <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-fuchsia-500">
+                    <span>ফিকশন</span>
+                  </div>
+                  <h3 class="mt-3 text-xl font-semibold text-slate-900">মুগ্ধতার কাব্য</h3>
+                  <p class="mt-1 text-sm text-slate-500">আলিফা রহমান</p>
+                  <p class="mt-4 text-lg font-semibold text-slate-900">৳ ২৪০</p>
+                  <button
+                    class="mt-auto inline-flex items-center justify-center rounded-full bg-brand-secondary px-5 py-2 text-sm font-semibold text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-200"
+                  >
+                    এখনই কিনুন
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="ডিসকাউন্ট"
+          class="relative py-20"
+        >
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(124,_58,_237,_0.08),_transparent_75%)]"></div>
+          <div class="relative mx-auto max-w-6xl px-6 lg:px-8">
+            <div class="overflow-hidden rounded-[2.5rem] border border-violet-100 bg-gradient-to-br from-violet-600 via-violet-500 to-indigo-500 px-8 py-12 text-white shadow-2xl lg:px-16">
+              <div class="grid gap-10 lg:grid-cols-[2fr_1fr] lg:items-center">
+                <div class="space-y-6">
+                  <span class="inline-flex rounded-full bg-white/20 px-4 py-1 text-sm font-semibold uppercase tracking-wide">বিশেষ বান্ডেল</span>
+                  <h2 class="text-3xl font-bold">৩ টির বান্ডেলে ৩০% পর্যন্ত ছাড়</h2>
+                  <p class="text-base text-violet-100">
+                    দক্ষতা উন্নয়ন, আধ্যাত্মিক অনুপ্রেরণা ও ব্যবসায়িক অন্তর্দৃষ্টি—একত্রে কিনলে পাচ্ছেন অবিশ্বাস্য ছাড়। ছাত্র, কর্মজীবী ও উদ্যোক্তাদের জন্য পারফেক্ট।
+                  </p>
+                  <ul class="space-y-3 text-sm text-violet-50">
+                    <li class="flex items-center gap-3">
+                      <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-lg font-semibold">১</span>
+                      ব্যবসায়িক নেতৃত্ব + ফাইন্যান্স বেসিক + স্টার্টআপ মানসিকতা
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-lg font-semibold">২</span>
+                      কোরআন থেকে অনুপ্রেরণা + জীবনের গল্প + পরিবারে সুখ
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <span class="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-lg font-semibold">৩</span>
+                      ডিজাইন থিংকিং + ক্রিয়েটিভ রাইটিং + প্রেজেন্টেশনের জাদু
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex flex-col gap-4 rounded-3xl bg-white/15 p-6 text-sm text-violet-50">
+                  <div class="rounded-2xl bg-white/25 p-4">
+                    <p class="text-base font-semibold text-white">প্রোমো কোড: পড়াশোনা৩০</p>
+                    <p class="mt-2 text-sm text-violet-100">চেকআউটে কোড ব্যবহার করুন এবং ৩ বা ততোধিক বইতে ছাড় উপভোগ করুন।</p>
+                  </div>
+                  <div class="rounded-2xl bg-white/10 p-4">
+                    <p class="text-xs uppercase tracking-wide text-violet-200">বোনাস সুবিধা</p>
+                    <p class="mt-2 font-semibold text-white">
+                      যে কোনো বান্ডেলে ফ্রি ডিজিটাল রিডিং গাইড ও বুকমার্ক।
+                    </p>
+                  </div>
+                  <a
+                    href="#বই-সংগ্রহ"
+                    class="inline-flex items-center justify-center rounded-full bg-white px-6 py-2 text-sm font-semibold text-violet-600 transition hover:bg-violet-50"
+                  >
+                    বান্ডেল নির্বাচন করুন
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="লেখক-স্পটলাইট"
+          class="bg-white py-20"
+        >
+          <div class="mx-auto max-w-6xl px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+              <div class="space-y-4">
+                <span class="inline-flex items-center gap-2 rounded-full bg-brand-muted px-4 py-1 text-sm font-semibold text-brand-primary">
+                  মাসের লেখক
+                </span>
+                <h2 class="text-3xl font-semibold text-slate-900">ইমাম হাসান বিন রশীদ</h2>
+                <p class="text-lg text-slate-600">
+                  আধুনিক ইসলামী সাহিত্য ও জীবনদর্শনে তিনি এক আলোকবর্তিকা। রসপ্রবণ ভাষায় তরুণ প্রজন্মকে সংগঠিত করে চলেছেন। তার লেখা বইগুলোতে কুরআন ও সুন্নাহ সমন্বিত বাস্তবমুখী জীবনচিত্র ফুটে ওঠে।
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm text-slate-500">
+                  <div class="rounded-2xl bg-slate-100 px-4 py-2">১১টি বেস্টসেলার বই</div>
+                  <div class="rounded-2xl bg-slate-100 px-4 py-2">৩০০+ বক্তৃতা</div>
+                  <div class="rounded-2xl bg-slate-100 px-4 py-2">২৪ লাখ পাঠক</div>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                  <button
+                    class="inline-flex items-center justify-center rounded-full bg-brand-primary px-6 py-2 text-sm font-semibold text-white transition hover:bg-violet-600"
+                  >
+                    লেখকের বই দেখুন
+                  </button>
+                  <button
+                    class="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-2 text-sm font-semibold text-slate-700 transition hover:border-brand-primary hover:text-brand-primary"
+                  >
+                    সাক্ষাৎকার পড়ুন
+                  </button>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="absolute inset-0 translate-x-6 translate-y-6 rounded-3xl bg-brand-primary/10 blur-2xl"></div>
+                <div class="relative overflow-hidden rounded-3xl border border-slate-100 bg-slate-100 shadow-soft">
+                  <img
+                    src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80"
+                    alt="লেখক ইমাম হাসান বিন রশীদ"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="প্রশংসা"
+          class="bg-slate-100 py-20"
+        >
+          <div class="mx-auto max-w-6xl px-6 lg:px-8">
+            <div class="flex flex-col gap-6 text-center">
+              <span class="mx-auto inline-flex items-center gap-2 rounded-full bg-white px-4 py-1 text-xs font-semibold uppercase tracking-wide text-brand-primary">
+                পাঠকের ভালোবাসা
+              </span>
+              <h2 class="text-3xl font-semibold text-slate-900">পাঠকের অভিজ্ঞতা ও প্রশংসা</h2>
+              <p class="mx-auto max-w-3xl text-base text-slate-600">
+                আমাদের সন্তুষ্ট পাঠকরা কী বলছেন—তাদের গল্পই আমাদের অনুপ্রেরণা। দ্রুত ডেলিভারি, নিখুঁত প্যাকেজিং ও মনমুগ্ধকর পাঠ-অনুভূতি।
+              </p>
+            </div>
+
+            <div class="mt-14 grid gap-6 lg:grid-cols-3">
+              <div class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 text-left shadow-soft">
+                <div class="flex items-center gap-3">
+                  <span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 text-base font-semibold text-brand-primary">আর</span>
+                  <div>
+                    <p class="font-semibold text-slate-900">রুবায়েত হাসান</p>
+                    <p class="text-xs text-slate-500">ঢাকা, বাংলাদেশ</p>
+                  </div>
+                </div>
+                <p class="mt-4 text-sm text-slate-600">
+                  “প্রতিটি অর্ডারে আপডেট মেসেজ পেয়েছি। বই গুলি একদম নতুন অবস্থায় পেয়েছি, এবং ডিসকাউন্ট বান্ডেলে সত্যিই দারুণ সুবিধা হয়েছে।”
+                </p>
+                <div class="mt-4 flex items-center gap-1 text-amber-400">
+                  <span class="text-sm font-semibold text-slate-500">রেটিং ৫/৫</span>
+                </div>
+              </div>
+              <div class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 text-left shadow-soft">
+                <div class="flex items-center gap-3">
+                  <span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 text-base font-semibold text-brand-primary">এম</span>
+                  <div>
+                    <p class="font-semibold text-slate-900">মেহজাবিন আক্তার</p>
+                    <p class="text-xs text-slate-500">চট্টগ্রাম</p>
+                  </div>
+                </div>
+                <p class="mt-4 text-sm text-slate-600">
+                  “বাংলা টাইপোগ্রাফির এই নিখুঁত ব্যবহার আমার খুব পছন্দ। শিশুদের জন্যও দারুণ কিছু বই পেয়েছি, সাপোর্ট টিমও খুব সহায়ক।”
+                </p>
+                <div class="mt-4 flex items-center gap-1 text-amber-400">
+                  <span class="text-sm font-semibold text-slate-500">রেটিং ৪.৮/৫</span>
+                </div>
+              </div>
+              <div class="flex h-full flex-col rounded-3xl border border-slate-200 bg-white p-6 text-left shadow-soft">
+                <div class="flex items-center gap-3">
+                  <span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/10 text-base font-semibold text-brand-primary">এস</span>
+                  <div>
+                    <p class="font-semibold text-slate-900">সাজিয়া নূর</p>
+                    <p class="text-xs text-slate-500">খুলনা</p>
+                  </div>
+                </div>
+                <p class="mt-4 text-sm text-slate-600">
+                  “ইসলামী বইয়ের সংগ্রহটি অসাধারণ। টেইলউইন্ড ডিজাইনের আধুনিকতা ও বাংলা ভাষার মেলবন্ধন পাওয়ায় খুবই খুশি।”
+                </p>
+                <div class="mt-4 flex items-center gap-1 text-amber-400">
+                  <span class="text-sm font-semibold text-slate-500">রেটিং ৫/৫</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-slate-900 text-slate-200">
+        <div class="mx-auto max-w-6xl px-6 py-16 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-white">বাংলা বুকশপ</h3>
+              <p class="text-sm text-slate-400">
+                বাংলা বইয়ের ডিজিটাল অভয়ারণ্য। পড়ার মনকে জাগ্রত করতে এবং নতুন জ্ঞান অর্জনে সর্বদা প্রস্তুত।
+              </p>
+              <div class="flex gap-4 text-slate-400">
+                <a
+                  href="#"
+                  class="transition hover:text-white"
+                >
+                  ফেসবুক
+                </a>
+                <a
+                  href="#"
+                  class="transition hover:text-white"
+                >
+                  ইনস্টাগ্রাম
+                </a>
+                <a
+                  href="#"
+                  class="transition hover:text-white"
+                >
+                  ইউটিউব
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold text-white">যোগাযোগ</h4>
+              <ul class="mt-4 space-y-3 text-sm text-slate-400">
+                <li>ইমেল: hello@banglabookshop.com</li>
+                <li>ফোন: +৮৮০ ১১২২-৩৩৪৪৫৫</li>
+                <li>ঠিকানা: ধানমন্ডি, ঢাকা-১২০৫</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-semibold text-white">পেমেন্ট সুরক্ষা</h4>
+              <p class="mt-4 text-sm text-slate-400">
+                আন্তর্জাতিক ও স্থানীয় পেমেন্ট চ্যানেল সমর্থিত।
+              </p>
+              <div class="mt-4 grid grid-cols-3 gap-3 text-sm font-semibold text-slate-300">
+                <span class="rounded-xl bg-slate-800 px-3 py-2 text-center">ভিসা</span>
+                <span class="rounded-xl bg-slate-800 px-3 py-2 text-center">মাস্টার</span>
+                <span class="rounded-xl bg-slate-800 px-3 py-2 text-center">বিকাশ</span>
+                <span class="rounded-xl bg-slate-800 px-3 py-2 text-center">নগদ</span>
+                <span class="rounded-xl bg-slate-800 px-3 py-2 text-center">রকেট</span>
+                <span class="rounded-xl bg-slate-800 px-3 py-2 text-center">স্ক্রিল</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 border-t border-slate-700 pt-6 text-center text-xs text-slate-500">
+            © ২০২৫ বাংলা বুকশপ। সকল অধিকার সংরক্ষিত।
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
